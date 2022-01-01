@@ -5,6 +5,6 @@ $(document).ready(function () {
     $("article").load(event.target.href + " article>.content");
   });
   $(window).on("popstate", function (event) {
-    $("article").load(event.target.href + " article>.content");
+    $("article").load(location.href + " article>.content");
   });
 });
